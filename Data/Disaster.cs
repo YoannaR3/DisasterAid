@@ -49,6 +49,10 @@ namespace DisasterAid.Data
         [ForeignKey(nameof(TypeId))]
         public DisasterType Type { get; set; } = null!;
 
+        [Required]
+        [Comment("Location of the disaster")]
+        public string Location { get; set; } = string.Empty;
+
         [Comment("Indicates if the disaster is active or not")]
         public bool IsActive { get; set; }
 
