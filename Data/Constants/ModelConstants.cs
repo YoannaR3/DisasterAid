@@ -2,10 +2,10 @@
 {
     public static class ModelConstants
     {
-        public const int DisasterNameMinimumLength = 5;
+        public const int DisasterNameMinimumLength = 3;
         public const int DisasterNameMaximumLength = 100;
 
-        public const int DisasterDescriptionMinimumLength = 15;
+        public const int DisasterDescriptionMinimumLength = 10;
         public const int DisasterDescriptionMaximumLength = 500;
 
         public const int DisasterTypeNameMinimumLength = 3;
