@@ -9,15 +9,20 @@ namespace DisasterAid.Models
         public string Start { get; set; }
         public string Type { get; set; }
         public string Organiser { get; set; }
+        public string Description { get; set; } 
+        public string Location { get; set; }
+
 
         
-        public DisasterInfoViewModel(int id, string name, DateTime startingTime, string type, string organiser)
+        public DisasterInfoViewModel(int id, string name, DateTime startingTime, string type, string organiser, string description, string location)
         {
             Id = id;
             Name = name;
             Start = startingTime.ToString(ModelConstants.DateFormat);
             Type = type;
             Organiser = organiser;
+            Description = description;
+            Location = location;
         }
     }
 }
