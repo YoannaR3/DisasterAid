@@ -19,6 +19,8 @@ namespace DisasterAid.Models
         [Required(ErrorMessage = ModelConstants.RequireErrorMessage)]
         public string End { get; set; } = string.Empty;
 
+        public string? NewType { get; set; }
+
         [Required(ErrorMessage = ModelConstants.RequireErrorMessage)]
         public int TypeId { get; set; }
         public int Id { get; set; }
