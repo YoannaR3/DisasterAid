@@ -11,10 +11,11 @@ namespace DisasterAid.Models
         public string Organiser { get; set; }
         public string Description { get; set; } 
         public string Location { get; set; }
-
-
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
         
-        public DisasterInfoViewModel(int id, string name, DateTime startingTime, string type, string organiser, string description, string location)
+        
+        public DisasterInfoViewModel(int id, string name, DateTime startingTime, string type, string organiser, string description, string location, double latitude, double longitude)
         {
             Id = id;
             Name = name;
@@ -23,6 +24,8 @@ namespace DisasterAid.Models
             Organiser = organiser;
             Description = description;
             Location = location;
+            Latitude = latitude;
+            Longitude = longitude;
         }
     }
 }
