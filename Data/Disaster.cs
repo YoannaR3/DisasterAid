@@ -56,6 +56,12 @@ namespace DisasterAid.Data
         [Comment("Indicates if the disaster is active or not")]
         public bool IsActive { get; set; }
 
+        [Comment("Latitude coordinate of the disaster location")]
+        public double Latitude { get; set; } 
+
+        [Comment("Longitude coordinate of the disaster location")]
+        public double Longitude { get; set; }
+
         public IList<DisasterParticipant> DisasterParticipants { get; set; } = new List<DisasterParticipant>();
     }
 }
